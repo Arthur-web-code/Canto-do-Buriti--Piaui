@@ -1,0 +1,113 @@
+header {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Canto_do_Buriti_bandeira.PNG/640px-Canto_do_Buriti_bandeira.PNG");
+    background-size: cover;
+    padding: 0px; 
+    color: white; 
+    text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #1e3952;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(30, 57, 82, 0.8) 0%, rgba(30, 57, 82, 0.5) 100%);
+    z-index: -1;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; 
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    opacity: 1; 
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #1e3952;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1e3952;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
